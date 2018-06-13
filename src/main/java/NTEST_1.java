@@ -1,4 +1,4 @@
-public class NTEST_1{
+public class NTEST1{
 
 public static void main(String[] array){
 
