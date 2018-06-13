@@ -1,84 +1,25 @@
 package ru.nazarkot.education;
 
-
 public class NTEST1 {
-
-
-
 
 
     public static void main(String[] array) {
 
+        Point p1 = new Point(3.0,6.0);
 
+        Point p2 = new Point(5.0,9.0);
+        System.out.println("Расстояние(2 точки в одном месте) = "  + pointdistance(p1,p2));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        NTEST2 t1 = new NTEST2();
-        t1.l =  5.0;
-        t1.color = "Performce Blue";
-        System.out.println("Площадь квадрата цвета: " + t1.color + " равна = " + sqrt2(t1));
-
-
-
-        Triangle t2 = new Triangle();
-        t2.a =  5.0;
-        t2.b = 6.0;
-        System.out.println("Площадь треугольника = "  + triangleArea2(t2));
-
-
-
-
-
-        double c0 = 10;
-        System.out.println("Значение переменной С0 = " + c0);
-        System.out.println("Площадь квадрата = " + sqrt(25));
-
-        System.out.println("Площадь треугольника = " + triangleArea(15,25));
     }
 
-    public static double sqrt(double n) {
-
-        double result = n*n;
-        return result;
-    }
-
-
-    public static double sqrt2(NTEST2 t1) {
-
-        return t1.l * t1.l ;
-    }
-
-    public static double triangleArea (double a, double b)
+    public static double pointdistance (Point p1,Point p2)
     {
 
-        double result = ((a*b) / 2.0 );
+        double AC = p2.x1 - p1.x1;
+        double BC = p2.y1 - p1.y1;
+
+        double result = ( Math.sqrt(Math.pow(AC,2.0) ) + Math.sqrt(Math.pow(BC,2.0) ) ) ;
         return result;
-    }
-
-
-
-    public static double triangleArea2 (Triangle t2)
-    {
-
-
-        return ((t2.a * t2.b) / 2.0 );
     }
 
 
