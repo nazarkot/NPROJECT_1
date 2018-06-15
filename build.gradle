@@ -1,15 +1,12 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = "NTEST_1"
-
-
-
+mainClassName = "NTEST1"
 
 repositories {
     mavenCentral()
 }
 
-dependencies{
+dependencies {
     testCompile 'org.testng:testng:6.14.3'
 }
